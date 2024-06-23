@@ -1,0 +1,73 @@
+*{
+    background-color: white;
+    border: 0px;
+    margin: 0px;
+}
+
+
+header{
+    background-color: black;
+    color: salmon;
+    border: 0px;
+    margin: 0px;
+}
+
+.header_tittle{
+    background-color: black;
+    color: salmon;
+    /* width: 300px; */
+    border: 0px;
+    padding: 5px;
+    margin: 0px;
+    padding: 25px;;
+}
+
+.header_menu{
+    display: flex;    
+    justify-content: space-around;
+    background-color: salmon;
+    color: black;
+    padding: 5px;
+    margin: 0px;
+}
+
+h1{
+    background-color: black;
+    font-family: 'sans-serif','Righteous';
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    /* background-color: black; */
+    font-family: 'sans-serif','Righteous';
+    font-style: italic;
+    font-size: 25px;
+    /* text-align: center; */ 
+    padding-left: 30px;   
+}
+
+nav{
+    color: salmon;
+    background-color: salmon;    
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+div > li{
+    background-color: salmon;
+    margin-left: 0%;
+    list-style: none;   
+}
+
+li{
+    padding-left: 100px;
+}
+
+p{
+    font-family: serif, Georgia, Times;
+}
+
