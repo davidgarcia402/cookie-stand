@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnterCODE201-Cookie Stand</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="header_tittle">
-            <h1>Welcome to Pat's Salmon Cookies!</h1>
-        </div>        
-            <nav>                           
-                <ul>
-                    <div class="header_menu"> 
-                        <li><a href="index.html">Home</a></li>
-                        <li>Sales Data</li>
-                    </div>                 
-                </ul>                                         
-            </nav>                    
+            <h1>Welcome to Pat's "Salmon Cookies!"</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="header_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Sales Data</li>
+                </div>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section id = "root"></section>
+     <section>
+            <form action="" id="new-store-form">
+                <fieldset>
+                    <legend>Add a new storeto the table</legend>
+                    <label for="location-name">Location Name</label>
+                    <!--Recomendación: coincidir valor input.name con atributos de objetos JS-->
+                    <input id="location-name" type="text" placeholder="Nueva sucursal" name="location_name" />
+                    <label for="min-customer-hour">Minimum Customer per Hour</label>
+                    <input id="min-customer-hour" type="number" placeholder="Minimo compra x hora" name="min_hour" />
+                    <label for="max-customer-hour">Maximum Customer per Hour</label>
+                    <input id="max-customer-hour" type="number" placeholder="Máximo compra x hora" name="max_hour"  />
+                    <label for="avg-customer-hour">Average Customer per Hour</label>
+                    <input id="avg-customer-hour" type="text" placeholder="Promedio compra x hora" name="avg_hour"/><br/>
+                    <button type="submit" id="btn-sender">Enviar datos</button>
+                </fieldset>                
+            </form>
+        </section>   
+        <section id="grid-stores-sales" class="grid_sales">
+
+        </section>
     </main>
-    <footer></footer>
-    <script src = "js/app.js"></script>
+    <footer>
+        <div class="main_footer">
+            <h5>2023 Pat's Salcom Cookies</h5>
+        </div>
+    </footer>
+    <script src = "js/app.js"></script>    
 </body>
